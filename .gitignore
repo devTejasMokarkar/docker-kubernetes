@@ -18,6 +18,7 @@ target/
 *.iws
 *.iml
 *.ipr
+*.exe
 
 ### NetBeans ###
 /nbproject/private/
@@ -26,6 +27,7 @@ target/
 /nbdist/
 /.nb-gradle/
 build/
+exe/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
