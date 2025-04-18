@@ -12,6 +12,7 @@ target/
 .settings
 .springBeans
 .sts4-cache
+minikube-linux-amd64
 
 ### IntelliJ IDEA ###
 .idea
