@@ -34,3 +34,4 @@ exe/
 
 ### VS Code ###
 .vscode/
+minikube-linux-amd64
