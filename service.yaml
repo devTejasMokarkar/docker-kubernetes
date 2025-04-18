@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: demo-app-service
+  name: pizza-app-service
 spec:
   selector:
-    app: demo-app  # Match labels from deployment
+    app: pizza-app  # Match labels from deployment
   ports:
     - protocol: TCP
       port: 80       # External port for accessing the service

@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: demo-app
+  name: pizza-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: demo-app
+      app: pizza-app
   template:
     metadata:
       labels:
-        app: demo-app
+        app: pizza-app
     spec:
       containers:
-      - name: demo-app
-        image: demo-app:latest  # Use the local image name
+      - name: pizza-app
+        image: pizza-app:latest  # Use the local image name
         imagePullPolicy: Never  # Prevent Kubernetes from trying to pull the image from a registry
         ports:
         - containerPort: 8080
