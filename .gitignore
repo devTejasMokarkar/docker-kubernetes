@@ -13,6 +13,18 @@ target/
 .springBeans
 .sts4-cache
 minikube-linux-amd64
+# Ignore zip files
+*.zip
+
+# Ignore build directories
+/target/
+
+# Ignore IDE-specific files
+.idea/
+.vscode/
+
+# Ignore logs
+*.log
 
 ### IntelliJ IDEA ###
 .idea
