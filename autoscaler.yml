@@ -1,0 +1,15 @@
+poll_interval_seconds: 60
+metric_stores:
+  - name: monitoring
+    type: prometheus
+    prometheus:
+      url: http://prometheus:9090
+autoscale_rules:
+  - service_name: my-stack_my-app
+    scale_min: 1
+    scale_max: 5
+    scale_step: 1
+    metric_store: monitoring
+    metric_query: scalar(avg(rate(http_requests_total{job="my-app"}[5m])))
+    scale_up_threshold: 300
+    scale_down_threshold: 200

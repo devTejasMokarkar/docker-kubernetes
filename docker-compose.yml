@@ -1,0 +1,13 @@
+services:
+  my-app:
+    image: my-app-image
+    networks:
+      - monitoring-net
+    deploy:
+      replicas: 3
+      labels:
+        - "prometheus-job=my-app"
+
+networks:
+  monitoring-net:
+    external: true
