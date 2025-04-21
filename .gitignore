@@ -15,6 +15,12 @@ target/
 minikube-linux-amd64
 # Ignore zip files
 *.zip
+# Ignore Docker-related files
+*.tar
+*.img
+*.iso
+Dockerfile
+.docker/
 
 # Ignore build directories
 /target/
