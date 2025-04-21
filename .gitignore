@@ -21,6 +21,11 @@ minikube-linux-amd64
 *.iso
 Dockerfile
 .docker/
+# Ignore build directories
+/target/
+
+# Ignore large PPT files (if unnecessary)
+*.pptx
 
 # Ignore build directories
 /target/
@@ -53,3 +58,4 @@ exe/
 ### VS Code ###
 .vscode/
 minikube-linux-amd64
+/target/
